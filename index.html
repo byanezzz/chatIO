@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChatIO</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="contaier">
+    <div class="row">
+      <form id="formModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="title-modal"></h2>
+            </div>
+            <div class="modal-body">
+              <p class="formModal"></p>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </form>
+      <div id="title" class="well">
+        <h2>Bienvenido al chat</h2>
+      </div>
+      <div class="col-md-9" id="containerMessages">
+        <div class="panel panel-primary head">
+          <div class="panel-heading">
+            <p>Mensajes de la sala</p>
+          </div>
+        </div>
+        <div id="chatMsgs"></div>
+      </div>
+      <div class="col-md-3" id="containerUsers">
+        <div class="panel panel-primary head">
+          <div class="panel-heading">
+            <p>Usuarios</p>
+          </div>
+        </div>
+        <div id="chatUsers"></div>
+      </div>
+      <div id="typing" class="col-md-9"></div>
+      <div class="col-md-7" class="containerSendMessages">
+        <input type="text" class="message col-md-12 form-control" placeholder="Escribe un mensaje">
+      </div>
+      <div class="col-md-2" class="containerSendMessages">
+        <button class="btn btn-large btn-block btn-primary sendMsg">Enviar Mensaje</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
